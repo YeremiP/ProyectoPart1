@@ -1,4 +1,309 @@
-h1{
-    background-color: #00986B ;
-    color: rgb(12, 11, 11);
+#home-button {
+  font-weight: bold;
+  /* Texto en negrita */
+  background-color: #ff5252;
+  /* Color de fondo azul */
+  color: #333;
+  /* Color del texto */
+  border: 2px solid #000000;
+  /* Color del borde */
+  padding: 10px 20px;
+  /* Espaciado interno */
+  font-size: 50px;
+  /* Tamaño de fuente */
+  cursor: pointer;
+  /* Cambia el cursor al pasar sobre el botón */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  transition: all 0.3s ease;
+  /* Transición suave al pasar el ratón */
+}
+
+/* Para centrar el botón se hace con un class en el body */
+.center-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+/* Color del texto dentro del botón */
+a {
+  color: #333;
+}
+
+/* Darle efecto al botón */
+#home-button:hover {
+  background-color: #ffffff;
+  /* Color de fondo al pasar el ratón */
+  color: #ff5252;
+  border: 2px solid #ff5252;
+  box-shadow: 5px 5px 0px #ff5252;
+}
+
+/* Logo */
+img[alt="Logo"] {
+  position: static;
+  top: 100px;
+  left: 5px;
+  width: 120px;
+  z-index: 2;
+  border-radius: 100px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0);
+}
+
+/* Imagen izquirda texto derecha */
+.text-right{
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+.text-alling{
+  padding: 1em;
+
+}
+
+/* Imagen derecha texto izquierda */
+.text-left {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+
+
+body {
+  background-color: #848482;
+}
+
+/* Menú (colores, radio, orientación) */
+#main-header .nav-bar {
+  background-color: #555555;
+  color: rgb(0, 0, 0);
+  padding: 1em;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.nav-bar ul {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-bar ul li a {
+  color: #dfcfb7;
+  text-decoration: none;
+}
+
+.color-of-title {
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.slogan-color {
+  color: #f5f5f5;
+  text-align: center;
+  font-style: italic;
+}
+
+.subcolor {
+  color: #4d2d28;
+}
+
+/* Anotaciones para futuros proyectos */
+
+/* Contenedor de toda la galería */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Ajusta el número de columnas automáticamente */
+  gap: 20px;
+  /* Espacio entre las imágenes */
+  max-width: 1200px;
+  /* Ancho máximo de la galería */
+  margin: 0 auto;
+  /* Centra la galería */
+}
+
+/* Contenedor de cada imagen y su texto */
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 66.66%;
+  /* Mantiene proporción 3:2 (300px x 200px aprox) */
+}
+
+/* Estilo de la imagen */
+.wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Texto desplegable */
+.overtext {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(100, 84, 82, 0.6);
+  /* 0.6 Fondo oscuro con transparencia */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+/* xasdcdad */
+body{
+  cursor: none;
+}
+
+.custom-cursor {
+  position: absolute;
+  width: 50px; /* Ajusta el tamaño del coche según tu preferencia */
+  height: auto;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+
+/* Efecto hover */
+.wrapper:hover .overtext {
+  transform: translateY(0);
+  cursor: pointer;
+  /* Cursor */
+}
+
+.overtext h2 {
+  color: #000000;
+  font-size: medium;
+}
+
+
+/* Footer  */
+#main-footer {
+  background-color: #333;
+  color: #dfcfb7;
+  text-align: center;
+  padding: 1em;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 4px 8px;
+}
+
+.social-icons a {
+  color: #dfcfb7;
+  margin: 0 0.5em;
+  font-size: 1.5em;
+}
+
+.social-icons a:hover {
+  color: #dfcfb7;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .nav-bar ul {
+    flex-direction: column;
+  }
+
+  .text-right img{
+    flex-direction: column;
+  }
+
+  .text-right{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-alling{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-left{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-left img {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-gallery {
+    flex-direction: column;
+  }
+
+  .text-right img{
+    flex-direction: column;
+  }
+
+  .text-left img {
+    flex-direction: column;
+  }
+
+  .text-right{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-alling{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-left{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-bar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-right{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-alling{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-left{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-gallery {
+    flex-direction: column;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-right img{
+    flex-direction: column;
+  }
+  
+  .text-left img {
+    flex-direction: column;
+  }
 }
