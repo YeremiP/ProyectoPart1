@@ -1,3 +1,4 @@
+
 #home-button {
   font-weight: bold;
   /* Texto en negrita */
@@ -53,13 +54,13 @@ img[alt="Logo"] {
 }
 
 /* Imagen izquirda texto derecha */
-.text-right{
+.text-right {
   display: flex;
   align-items: center;
   padding: 1em;
 }
 
-.text-alling{
+.text-alling {
   padding: 1em;
 
 }
@@ -71,10 +72,9 @@ img[alt="Logo"] {
   padding: 1em;
 }
 
-
-
 body {
   background-color: #848482;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Menú (colores, radio, orientación) */
@@ -163,19 +163,6 @@ body {
 }
 
 /* xasdcdad */
-body{
-  cursor: none;
-}
-
-.custom-cursor {
-  position: absolute;
-  width: 50px; /* Ajusta el tamaño del coche según tu preferencia */
-  height: auto;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-}
-
 
 /* Efecto hover */
 .wrapper:hover .overtext {
@@ -216,21 +203,21 @@ body{
     flex-direction: column;
   }
 
-  .text-right img{
+  .text-right img {
     flex-direction: column;
   }
 
-  .text-right{
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .text-alling{
+  .text-right {
     flex-direction: column;
     text-align: center;
   }
 
-  .text-left{
+  .text-alling {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-left {
     flex-direction: column;
     text-align: center;
   }
@@ -245,7 +232,7 @@ body{
     flex-direction: column;
   }
 
-  .text-right img{
+  .text-right img {
     flex-direction: column;
   }
 
@@ -253,17 +240,17 @@ body{
     flex-direction: column;
   }
 
-  .text-right{
+  .text-right {
     flex-direction: column;
     text-align: center;
   }
 
-  .text-alling{
+  .text-alling {
     flex-direction: column;
     text-align: center;
   }
 
-  .text-left{
+  .text-left {
     flex-direction: column;
     text-align: center;
   }
@@ -275,17 +262,17 @@ body{
     text-align: center;
   }
 
-  .text-right{
+  .text-right {
     flex-direction: column;
     text-align: center;
   }
 
-  .text-alling{
+  .text-alling {
     flex-direction: column;
     text-align: center;
   }
 
-  .text-left{
+  .text-left {
     flex-direction: column;
     text-align: center;
   }
@@ -299,10 +286,10 @@ body{
     justify-content: center;
   }
 
-  .text-right img{
+  .text-right img {
     flex-direction: column;
   }
-  
+
   .text-left img {
     flex-direction: column;
   }
