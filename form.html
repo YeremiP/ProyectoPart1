@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
+
+</head>
+
+<body>
+
+  <header id="main-header">
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="start.html">Inicio</a></li>
+        <li><a href="gallery.html">Galería</a></li>
+        <li><a href="form.html">Formulario</a></li>
+        <li><a href="show-data.html">Datos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="item">
+      <form action="show-data.html" id="personal-data-form">
+        <label for="car">Nombre del coche:</label>
+        <input type="text" name="car" id="car">
+        <span id="form-car">* campo requerido</span>
+
+        <label for="model">Modelo:</label>
+        <input type="text" name="model" id="model">
+        <span id="form-model">* campo requerido</span>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="text" name="email" id="email">
+        <span id="form-email">* campo requerido</span>
+        <span id="form-email-invalid">* correo no valido</span>
+
+        <div class="form-submit">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <script src="js/form.js"></script>
+</body>
+
+</html>

@@ -11,9 +11,13 @@ First and foremost, we extend our thanks to Tiburcio for their ongoing explanati
 We also want to thank Learn Web for their tutorial on how to overlay text on images. Their clear and detailed guidance was invaluable in making our images more appealing and communicative. Without their support, we wouldn't have been able to achieve the design level we aimed for.
 - [Add Text Overlays to Images on Hover with HTML & CSS](https://www.youtube.com/watch?v=hr4JiDr7Aec)
 
+Additionally, we extend our gratitude to the YouTuber Online Tutorials for helping us create a Parallax effect. Their practical and easy-to-follow explanations were essential in achieving a dynamic and modern design.
+- [Simple Parallax Scrolling Effect with CSS & Vanilla Javascript](https://www.youtube.com/watch?v=TawH-AqHTXc)
+
+
 ## Author
 
-  - **Jéremy Paul Pacheco Oña** 
+  - **Jéremy Paul Pacheco Oña.** 
 
 
  
