@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/show-data.css">
-  <link rel="stylesheet" href="css/data-entry.css">
+  <link rel="stylesheet" href="css/footer-style.css">
+    <link rel="stylesheet" href="css/crud.css">
 </head>
 
 <body>
@@ -23,19 +23,53 @@
     </nav>
   </header>
 
-  <div class="container">
-    <h1>Datos introducidos en el formulario</h1>
-    <div class="data-container">
-      <p class="data-item"><strong>Nombre del coche:</strong></p>
-      <p class="data-value" id="car"></p>
-      <p class="data-item"><strong>Modelo:</strong></p>
-      <p class="data-value" id="model"></p>
-      <p class="data-item"><strong>Email:</strong></p>
-      <p class="data-value" id="email"></p>
-    </div>
-  </div>
+ 
+ <h1>Listado de Coches</h1>
+ <table>
+   <thead>
+     <tr>
+       <th>Tipo</th>
+       <th>Modelo</th>
+       <th>Especificaciones</th>
+       <th>Precio</th>
+       <th>Acciones</th>
+     </tr>
+   </thead>
+   <tbody id="car-table"></tbody>
+ </table>
 
-  <script src="js/show-data.js"></script>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Sobre Nosotros</h3>
+        <p>Ofrecemos las mejores recetas y comidas para disfrutar en familia y amigos.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces Útiles</h3>
+        <ul>
+          <li><a href="start.html">Inicio</a></li>
+          <li><a href="gallery.html">Galería</a></li>
+          <li><a href="form.html">Formulario</a></li>
+          <li><a href="show-data.html">Datos</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Redes Sociales</h3>
+        <p>Síguenos:</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_ES"><img
+              src="img/facebook.png" alt="Facebook"></a>
+          <a href="https://x.com/?lang=es"><img src="img/x.png" alt="Twitter"></a>
+          <a href="https://www.instagram.com/"><img src="img/ig.png" alt="Instagram"></a>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 Leyendas del Asfalto Inc. | Todos los derechos reservados.
+    </div>
+  </footer>
+   <script src="js/show-data.js"></script>
 </body>
 
 </html>

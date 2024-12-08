@@ -175,7 +175,7 @@ img[alt="Logo"] {
 
 
 /* Footer  */
-#main-footer {
+/* #main-footer {
   background-color: #333;
   color: #dfcfb7;
   text-align: center;
@@ -192,7 +192,7 @@ img[alt="Logo"] {
 
 .social-icons a:hover {
   color: #dfcfb7;
-}
+} */
 
 
 @media screen and (max-width: 1200px) {

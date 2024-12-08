@@ -50,3 +50,33 @@ section img {
 #road {
   z-index: 1;
 }
+
+/* Tamaño PC */
+@media (min-width: 1024px) {
+  #moon {
+    display: block;
+  }
+  #text {
+    font-size: 10rem;
+  }
+}
+
+/* Tamaño Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #moon {
+    display: none;
+  }
+  #text {
+    font-size: 8rem;
+  }
+}
+
+/* Tamaño Móvil */
+@media (max-width: 767px) {
+  #moon {
+    display: none;
+  }
+  #text {
+    font-size: 4.5rem;
+  }
+}

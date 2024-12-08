@@ -1,28 +1,70 @@
-const savedData = JSON.parse(localStorage.getItem('formData')) || [];
+// function loadCars() {
+//   const carList = JSON.parse(localStorage.getItem("carList")) || [];
+//   const carTable = document.getElementById("car-table");
+//   carTable.innerHTML = "";
 
-// Seleccionar el contenedor donde se mostrarán los datos
-const dataContainer = document.querySelector('.data-container');
+//   carList.forEach((car, index) => {
+//     const row = document.createElement("tr");
+//     row.innerHTML = `
+//       <td>${car.type}</td>
+//       <td>${car.model}</td>
+//       <td>${car.specifications}</td>
+//       <td>$${car.price}</td>
+//       <td>
+//         <button onclick="editCar(${index})">Editar</button>
+//         <button onclick="deleteCar(${index})">Eliminar</button>
+//       </td>
+//       `;
+//     carTable.appendChild(row);
+//   });
+// }
 
-// Limpiar el contenido inicial del contenedor
-dataContainer.innerHTML = '<h1>Datos introducidos en el formulario</h1>';
+// function editCar(index) {
+//   localStorage.setItem("editCarId", index);
+//   window.location.href = "form.html";
+// }
 
-// Verificar si hay datos guardados
-if (savedData.length === 0) {
-  dataContainer.innerHTML += '<p>No hay datos disponibles.</p>';
-} else {
-  // Crear elementos para cada entrada de datos
-  savedData.forEach((data, index) => {
-    const entry = document.createElement('div');
-    entry.className = 'data-entry';
+// function deleteCar(index) {
+//   const carList = JSON.parse(localStorage.getItem("carList")) || [];
+//   carList.splice(index, 1);
+//   localStorage.setItem("carList", JSON.stringify(carList));
+//   loadCars();
+// }
 
-    entry.innerHTML = `
-      <p><strong>Formulario ${index + 1}:</strong></p>
-      <p><strong>Nombre del coche:</strong> ${data.carName}</p>
-      <p><strong>Modelo:</strong> ${data.model}</p>
-      <p><strong>Email:</strong> ${data.email}</p> 
-      <hr>
+// document.addEventListener("DOMContentLoaded", loadCars);
+
+
+function loadCars() {
+  const carList = JSON.parse(localStorage.getItem("carList")) || [];
+  const carTable = document.getElementById("car-table");
+  carTable.innerHTML = "";
+
+  carList.forEach((car, index) => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${car.type}</td>
+      <td>${car.model}</td>
+      <td>${car.specifications}</td>
+      <td>${car.price} €</td>
+      <td>
+        <button onclick="editCar(${index})">Editar</button>
+        <button onclick="deleteCar(${index})">Eliminar</button>
+      </td>
     `;
-
-    dataContainer.appendChild(entry);
+    carTable.appendChild(row);
   });
 }
+
+function editCar(index) {
+  localStorage.setItem("editCarId", index);
+  window.location.href = "form.html";
+}
+
+function deleteCar(index) {
+  const carList = JSON.parse(localStorage.getItem("carList")) || [];
+  carList.splice(index, 1);
+  localStorage.setItem("carList", JSON.stringify(carList));
+  loadCars();
+}
+
+document.addEventListener("DOMContentLoaded", loadCars);
