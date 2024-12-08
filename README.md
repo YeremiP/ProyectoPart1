@@ -5,7 +5,6 @@ At The Retro Garage, we celebrate the essence of classic cars, where each vehicl
 
 
 ## Acknowledgments
-
 First and foremost, we extend our thanks to Tiburcio for their ongoing explanations, assistance, and advice. Their patience and dedication helped us overcome various obstacles throughout the process. Thanks to their knowledge and experience, we made advancements and improvements to our project in ways we hadn't imagined.
 
 We also want to thank Learn Web for their tutorial on how to overlay text on images. Their clear and detailed guidance was invaluable in making our images more appealing and communicative. Without their support, we wouldn't have been able to achieve the design level we aimed for.
